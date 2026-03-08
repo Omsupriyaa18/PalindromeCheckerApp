@@ -1,21 +1,20 @@
-## Use Case 8 – Linked List Based Palindrome Checker
+## Use Case 9 – Recursive Palindrome Checker
 
 Goal
-To check whether a string is a palindrome using a Linked List data structure.
+Check whether a string is a palindrome using recursion.
 
 Description
-In this use case, characters of the input string are inserted into a LinkedList. The first and last characters are removed and compared. If all corresponding characters match, the string is confirmed as a palindrome.
+In this use case, a recursive function compares the first and last characters of the string. If they match, the function calls itself with the next inner characters until the base condition is reached.
 
 Flow
-1. Define the input string.
-2. Insert characters into a LinkedList.
-3. Remove first and last characters.
-4. Compare the characters.
-5. Continue until the list size becomes 0 or 1.
-6. Display whether the string is a palindrome.
+1. Define input string.
+2. Call recursive function.
+3. Compare start and end characters.
+4. If mismatch → return false.
+5. Otherwise call recursion with start+1 and end-1.
+6. Stop when start >= end.
 
 Key Concepts
-- Singly Linked List
-- Node traversal
-- removeFirst()
-- removeLast()
+- Recursion
+- Base Condition
+- Call Stack
