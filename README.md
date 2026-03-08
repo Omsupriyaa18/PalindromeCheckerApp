@@ -1,18 +1,19 @@
-## Use Case 10 – Case-Insensitive & Space-Ignored Palindrome
+## Use Case 11 – Object-Oriented Palindrome Service
 
 Goal
-Check whether a string is a palindrome while ignoring spaces and letter case.
+Encapsulate palindrome checking logic inside a separate service class.
 
 Description
-In this use case, the input string is first normalized by removing spaces and converting all characters to lowercase. The palindrome check is then performed on the normalized string.
+In this use case, the palindrome checking logic is implemented inside a dedicated service class called PalindromeService. The main class creates an object of this service and calls the checkPalindrome() method.
 
 Flow
-1. Define the input string.
-2. Normalize the string (remove spaces and convert to lowercase).
-3. Compare characters from both ends of the string.
-4. If all pairs match, the string is a palindrome.
+1. Create PalindromeService class.
+2. Implement checkPalindrome() method.
+3. Instantiate service in main class.
+4. Pass input string to the method.
+5. Display result.
 
 Key Concepts
-- String preprocessing
-- Regular expressions
-- Case normalization
+- Encapsulation
+- Single Responsibility Principle
+- Object-Oriented Design
