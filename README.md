@@ -1,18 +1,19 @@
-## Use Case 12 – Strategy Pattern for Palindrome Algorithms
+## Use Case 13 – Performance Comparison
 
 Goal
-Choose a palindrome algorithm dynamically using the Strategy Design Pattern.
+Compare the execution time of palindrome checking algorithms.
 
 Description
-In this use case, a PalindromeStrategy interface defines the contract for palindrome checking algorithms. Different implementations such as StackStrategy or DequeStrategy can be used interchangeably. The strategy is selected at runtime.
+In this use case, the execution time of the palindrome validation algorithm is measured using System.nanoTime(). The start and end times are recorded, and the total execution duration is displayed.
 
 Flow
-1. Define PalindromeStrategy interface.
-2. Implement StackStrategy algorithm.
-3. Inject strategy at runtime.
-4. Execute palindrome validation.
+1. Capture start time using System.nanoTime().
+2. Execute palindrome algorithm.
+3. Capture end time.
+4. Calculate execution time.
+5. Display results.
 
 Key Concepts
-- Interface
-- Polymorphism
-- Strategy Pattern
+- System.nanoTime()
+- Algorithm benchmarking
+- Performance comparison
