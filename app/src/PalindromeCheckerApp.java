@@ -2,6 +2,35 @@ public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
+ UC4-CharArrayPalindrome
+        // Declare and initialize the input string
+        String input = "radar";
+
+        // Convert the string into a character array
+        char[] chars = input.toCharArray();
+
+        // Initialize pointers
+        int start = 0;
+        int end = chars.length - 1;
+
+        // Assume palindrome initially
+        boolean isPalindrome = true;
+
+        // Compare characters using two-pointer technique
+        while (start < end) {
+
+            if (chars[start] != chars[end]) {
+                isPalindrome = false;
+                break;
+            }
+
+            start++;
+            end--;
+        }
+
+        // Display result
+        System.out.println("Input : " + input);
+        System.out.println("Is Palindrome? : " + isPalindrome);
         String input = "madam";
         boolean isPalindrome = true;
 
@@ -14,6 +43,7 @@ public class PalindromeCheckerApp {
 
         System.out.println("Input text: " + input);
         System.out.println("Is it a Palindrome? : " + isPalindrome);
+main
     }
 }
 
