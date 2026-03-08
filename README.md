@@ -1,19 +1,18 @@
-## Use Case 11 – Object-Oriented Palindrome Service
+## Use Case 12 – Strategy Pattern for Palindrome Algorithms
 
 Goal
-Encapsulate palindrome checking logic inside a separate service class.
+Choose a palindrome algorithm dynamically using the Strategy Design Pattern.
 
 Description
-In this use case, the palindrome checking logic is implemented inside a dedicated service class called PalindromeService. The main class creates an object of this service and calls the checkPalindrome() method.
+In this use case, a PalindromeStrategy interface defines the contract for palindrome checking algorithms. Different implementations such as StackStrategy or DequeStrategy can be used interchangeably. The strategy is selected at runtime.
 
 Flow
-1. Create PalindromeService class.
-2. Implement checkPalindrome() method.
-3. Instantiate service in main class.
-4. Pass input string to the method.
-5. Display result.
+1. Define PalindromeStrategy interface.
+2. Implement StackStrategy algorithm.
+3. Inject strategy at runtime.
+4. Execute palindrome validation.
 
 Key Concepts
-- Encapsulation
-- Single Responsibility Principle
-- Object-Oriented Design
+- Interface
+- Polymorphism
+- Strategy Pattern
